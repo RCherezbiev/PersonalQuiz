@@ -56,15 +56,39 @@
 		C4DDDD622B1E44CE00E6D615 /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				C4DDDD632B1E44CE00E6D615 /* AppDelegate.swift */,
-				C4DDDD652B1E44CE00E6D615 /* SceneDelegate.swift */,
-				C4DDDD672B1E44CE00E6D615 /* ViewController.swift */,
-				C4DDDD692B1E44CE00E6D615 /* Main.storyboard */,
+				C4DDDD772B1E44FE00E6D615 /* App */,
+				C4DDDD792B1E452700E6D615 /* Viewcontrollers */,
+				C4DDDD782B1E450F00E6D615 /* Storyboards */,
 				C4DDDD6C2B1E44CF00E6D615 /* Assets.xcassets */,
-				C4DDDD6E2B1E44CF00E6D615 /* LaunchScreen.storyboard */,
-				C4DDDD712B1E44CF00E6D615 /* Info.plist */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		C4DDDD772B1E44FE00E6D615 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4DDDD632B1E44CE00E6D615 /* AppDelegate.swift */,
+				C4DDDD652B1E44CE00E6D615 /* SceneDelegate.swift */,
+				C4DDDD712B1E44CF00E6D615 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C4DDDD782B1E450F00E6D615 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C4DDDD692B1E44CE00E6D615 /* Main.storyboard */,
+				C4DDDD6E2B1E44CF00E6D615 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C4DDDD792B1E452700E6D615 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				C4DDDD672B1E44CE00E6D615 /* ViewController.swift */,
+			);
+			path = Viewcontrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,12 +318,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6NTBUA69W9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +331,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cherezbiev.PersonalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +349,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6NTBUA69W9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +362,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cherezbiev.PersonalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
