@@ -302,16 +302,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Cuk-zX-QLY">
-                                <rect key="frame" x="80" y="236" width="160.5" height="96.5"/>
+                                <rect key="frame" x="75" y="236" width="170" height="96.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqQ-N9-DkL">
-                                        <rect key="frame" x="0.0" y="0.0" width="160.5" height="60"/>
+                                        <rect key="frame" x="5" y="0.0" width="160.5" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы осьминог!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaR-5P-Aig">
-                                        <rect key="frame" x="25.5" y="76" width="109" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы осьминог!" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaR-5P-Aig">
+                                        <rect key="frame" x="30.5" y="76" width="109" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -322,8 +322,9 @@
                         <viewLayoutGuide key="safeArea" id="61E-q4-dEE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Cuk-zX-QLY" firstAttribute="centerX" secondItem="SYR-T3-e2H" secondAttribute="centerX" id="Ki5-M6-BuE"/>
+                            <constraint firstItem="Cuk-zX-QLY" firstAttribute="leading" secondItem="61E-q4-dEE" secondAttribute="leading" constant="75" id="bhj-bu-9bg"/>
                             <constraint firstItem="Cuk-zX-QLY" firstAttribute="centerY" secondItem="SYR-T3-e2H" secondAttribute="centerY" id="fj2-rc-dkd"/>
+                            <constraint firstItem="61E-q4-dEE" firstAttribute="trailing" secondItem="Cuk-zX-QLY" secondAttribute="trailing" constant="75" id="zTw-BD-i1S"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="bh7-94-ifE">
@@ -333,6 +334,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnimalDescriptionLabel" destination="TaR-5P-Aig" id="ELl-AD-hWW"/>
+                        <outlet property="resultAnimalLabel" destination="xqQ-N9-DkL" id="icN-Tw-1Zp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hai-MD-4ah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
