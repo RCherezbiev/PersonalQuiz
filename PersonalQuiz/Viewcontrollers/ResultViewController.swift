@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
-    
-    var chosenAnswers: [Answer] = []
+final class ResultViewController: UIViewController {
     
     @IBOutlet var resultAnimalLabel: UILabel!
     @IBOutlet var resultAnimalDescriptionLabel: UILabel!
-
+    
+    var chosenAnswers: [Answer] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
@@ -31,18 +31,13 @@ class ResultViewController: UIViewController {
             let animal = answer.animal
             animalCounts[animal] = (animalCounts[animal] ?? 0) + 1
         }
-
-        if let mostFrequentAnimal = animalCounts.max(by: { $0.value < $1.value })?.key {
-            return mostFrequentAnimal
-        } else {
-            return nil
-        }
+        return animalCounts.max(by: { $0.value < $1.value })?.key
     }
     
     private func getResultAnimal() {
         if let mostFrequentAnimal = determineMostFrequentAnimal() {
-                resultAnimalLabel.text = "Вы: \(mostFrequentAnimal.rawValue)"
-                resultAnimalDescriptionLabel.text = mostFrequentAnimal.definition
-            } 
+            resultAnimalLabel.text = "Вы: \(mostFrequentAnimal.rawValue)"
+            resultAnimalDescriptionLabel.text = mostFrequentAnimal.definition
+        }
     }
 }
